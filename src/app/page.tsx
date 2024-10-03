@@ -1,11 +1,13 @@
 
-
+"use client"
 import Navbar from '../app/components/Navbar';
 import Product from '@/app/components/Product';
-import data from "../../data.json"
+import data from "../../data.json";
+import { RecoilRoot } from 'recoil';
 
 export default function Home() {
   return (
+    <RecoilRoot>
     <div >
     <Navbar/>
     <section className='container mx-auto'>
@@ -19,5 +21,6 @@ export default function Home() {
     
     </section>
     </div>
+    </RecoilRoot>
   );
 }
