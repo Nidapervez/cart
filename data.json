@@ -2,28 +2,28 @@
     {
         "id": 1,
         "name": "Full Dress",
-        "price": 999,
+        "price": 10,
         "image": "/2.jpg",
         "quantity": 1
     },
     {
         "id": 2,
         "name": "T.shirt",
-        "price": 1299,
+        "price": 12,
         "image": "/4.jpg",
         "quantity": 1
     },
     {
         "id": 3,
         "name": "Suits",
-        "price": 1799,
+        "price": 17,
         "image": "/5.jpg",
         "quantity": 1
     },
     {
         "id": 4,
         "name": "Jackets",
-        "price": 699,
+        "price": 69,
         "image": "/6.jpg",
         "quantity": 1
     }

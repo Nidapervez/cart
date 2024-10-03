@@ -2,14 +2,25 @@
 import React from 'react'
 import {useRecoilState} from "recoil"
 import { cartState } from '../atom/cartState'
-
+import {toast} from "react-hot-toast"
 
 const Product = ({product}) => {
 
 const[cartItem,setCartItem]=useRecoilState(cartState)
 const addItemToCart=()=>{
 
-  setCartItem(prevState=>[...prevState,product])
+if(cartItem.findIndex(pro=>pro.id===product.id)===-1){
+
+setCartItem(prevState=>[...prevState,product])
+}else{
+  setCartItem(prevState=>{
+    return prevState.map((item)=>{
+      return item.id===product.id ? {...item,quantity:item.quantity +
+         1}  : item 
+  })
+})}
+toast(`${product.name} added to cart`)
+
 }
 
 

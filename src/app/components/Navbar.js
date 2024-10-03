@@ -6,11 +6,9 @@ import {useRecoilState} from "recoil"
 import { cartState } from '../atom/cartState';
 
 
+
 const Navbar = () => {
 const [cartItem]=useRecoilState(cartState)
-
-
-
 
 
   return (
